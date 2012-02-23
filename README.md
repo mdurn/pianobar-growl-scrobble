@@ -108,7 +108,7 @@ Scrobble if the song has been played this many seconds. (Default: **240**)
 
 Minimum duration for a song (in seconds) in order to be scrobbled. (Default: **30**)
 
-*Note: Unless a song is shorter than MIN_DURATION, a song will scrobble if either the THRESHOLD or MIN_DURATION 
+*Note: Unless a song is shorter than MIN_DURATION, a song will scrobble if either the THRESHOLD or PLAYED_ENOUGH 
 conditions have been met.*
 
 ## Thanks
