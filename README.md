@@ -33,32 +33,39 @@ using growlnotify that parallels the features using gntp in pianobar-growl.
 
 2) Two versions of the script are included here.
 
-**gntp_scrobble.py:**
-This uses the gntp protocol in Growl 1.3 and also requires the gntp python module:
-  pip install gntp
+- **gntp_scrobble.py:**
+This uses the gntp protocol in Growl 1.3 and also requires the gntp python module.
+
+Install the gntp python module:
+
+    pip install gntp
+
 *Note: Until retrieving images from urls is fixed in Growl 1.3, Growl notifications using this approach
 will not display album art.*
 
 Set the event_command variable in your Pianobar config file (e.g. `~/.config/pianobar`) to this
 script's path:
-  event_command = /Users/user/.config/pianobar/gntp_scrobble.py
+
+    event_command = /Users/user/.config/pianobar/gntp_scrobble.py
 
 ###OR
 
-**growlnotify_scrobble.py:**
+- **growlnotify_scrobble.py:**
 This is compatible with recent versions of Growl (tested with Growl 1.2 
 and 1.3) and requires the installation of growlnotify (included in the Extras folder in the Growl
 install package).
 
 Set the event_command variable in your Pianobar config file (e.g. `~/.config/pianobar`) to this
 script's path:
-  event_command = /Users/user/.config/pianobar/growlnotify_scrobble.py
+
+    event_command = /Users/user/.config/pianobar/growlnotify_scrobble.py
 
 3) Supply your own Last.fm credentials in either the gntp_scrobble.py or growlnotify_scrobble.py scripts:
-  API_KEY = "################################"
-  API_SECRET = "################################"
-  USERNAME = "########"
-  PASSWORD = "########"
+
+    API_KEY = "################################"
+    API_SECRET = "################################"
+    USERNAME = "########"
+    PASSWORD = "########"
 
 4) Save a default icon image for Growl notifications as 'pandora.png' in your Pianobar config directory
 (for example, the pandora.png image by Ross A. Reyman included in Sorin Ionescu's pianobar-growl repo:
