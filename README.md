@@ -43,7 +43,7 @@ Install the gntp python module:
 *Note: Until retrieving images from urls is fixed in Growl 1.3, Growl notifications using this approach
 will not display album art.*
 
-Set the event_command variable in your Pianobar config file (e.g. `~/.config/pianobar`) to this
+Set the event_command variable in your Pianobar config file (e.g. `~/.config/pianobar/config`) to this
 script's path:
 
     event_command = /Users/user/.config/pianobar/gntp_scrobble.py
@@ -55,7 +55,7 @@ This is compatible with recent versions of Growl (tested with Growl 1.2
 and 1.3) and requires the installation of growlnotify (included in the Extras folder in the Growl
 install package).
 
-Set the event_command variable in your Pianobar config file (e.g. `~/.config/pianobar`) to this
+Set the event_command variable in your Pianobar config file (e.g. `~/.config/pianobar/config`) to this
 script's path:
 
     event_command = /Users/user/.config/pianobar/growlnotify_scrobble.py
